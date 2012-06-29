@@ -31,6 +31,6 @@ EOS
 
   desc "Restart unicorn"
   task :restart do
-    sudo "initctl emit #{foreman_restart_job}"
+    sudo "initctl emit #{foreman_restart_event}"
   end
 end
